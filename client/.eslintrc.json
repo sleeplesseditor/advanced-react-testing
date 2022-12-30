@@ -28,7 +28,7 @@
     "jsx": true
     },
     "parser": "@typescript-eslint/parser",
-    "project": "tsconfig.json"
+    "project": "client/tsconfig.json"
     },
     "plugins": [
     "testing-library",
