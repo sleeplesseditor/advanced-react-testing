@@ -35,7 +35,7 @@ export function* authenticateUser(payload: SignInDetails): SagaIterator {
     );
   } finally {
     if (yield cancelled()) {
-      yield put(showToast({ title: "Sign in canceled", status: "warning" }));
+      yield put(showToast({ title: "Sign in cancelled", status: "warning" }));
       yield put(signOut());
     }
     yield put(endSignIn());
