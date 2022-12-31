@@ -97,7 +97,7 @@ export function* purchaseTickets(
   } finally {
     if (yield cancelled()) {
       yield call(cancelPurchaseServerCall, purchaseReservation);
-      yield put(showToast({ title: "purchase canceled", status: "warning" }));
+      yield put(showToast({ title: "purchase cancelled", status: "warning" }));
       yield call(cancelTransaction, holdReservation);
     } else {
       yield call(releaseServerCall, holdReservation);
